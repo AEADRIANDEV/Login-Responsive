@@ -1,0 +1,137 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: black;
+}
+.form-container{
+    background-color: white;
+    width: 80%;
+    height: 90%;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;   
+}
+.form-container .login-container{
+    width: 500px;
+    margin: 0 auto;
+}
+.form-container .login-container >h2{
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.form-container .login-container >p,
+.form-container .login-container >span{
+    text-align: center;
+    color: #555;
+}
+.form-container .login-container label{
+    display: block;
+    font-weight: bold;
+    padding: 5px,0;
+}
+.form-container .login-container input.input{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: solid 1px, #ccc;
+    border-radius: 5px;
+}
+.form-container .login-container input.input:focus{
+    outline: solid 2px #0099ff;
+}
+.form-container .login-container .options{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+.form-container .login-container .providers{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    margin-top: 30px;
+
+}
+.form-container a{
+    color: #0099ff;
+    text-decoration: none;
+}
+.form-container a:hover{
+    text-decoration: underline;
+}
+.btn{
+    border: none;
+    padding: 15px 0;
+    width: 100%;
+    font-weight: bolder;
+    display: block;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.btn.btn-login{
+    background-color: black;
+    color: white;
+}
+.btn.btn-facebook{
+    background-color: #085080;
+    color: white;
+}
+.btn.btn-google{
+    background-color: #e33838;
+    color: white;
+}
+.btn.btn-outlook{
+    background-color: #66e03e;
+    color: white;
+}
+
+.btn.btn-facebook:hover{
+    background-color: #222;
+}
+.btn.btn-google:hover{
+    background-color: #222;
+}
+.btn.btn-outlook:hover{
+    background-color: #222;
+}
+.btn.btn-login:hover{
+    background-color: #222;
+}
+
+.form-container .welcome-screen-container{
+    background-color: #ccc;
+    height: 100%;
+    width: 50%;
+}
+@media screen and (max-width:1357px){
+    .form-container{
+        width: 95%;
+    }
+    .form-container .login-container{
+        width: 400px;
+        margin: 0 auto;
+    }
+    .form-container .welcome-screen-container{
+        width: 40%;
+    }
+}
+@media screen and (max-width:700px){
+    .form-container{
+        height: 80%;
+    }
+    .form-container .login-container{
+        width: 400px;
+    }
+    .form-container .welcome-screen-container{
+        display: none;
+    }
+}
