@@ -1,3 +1,4 @@
+  
 body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -6,20 +7,22 @@ body{
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: black;
+    background-color: #161917;
 }
 .form-container{
-    background-color: white;
-    width: 80%;
-    height: 90%;
+    background-color: #b9030f;
+    color: white;
+    width: 60%;
+    height: 70%;
     border-radius: 10px;
     overflow: hidden;
     display: flex;
     align-items: center;   
+    box-shadow: 2px 2px 10px 5px #ffff ;
 }
 .form-container .login-container{
     width: 500px;
-    margin: 0 auto;
+    margin: 40px;
 }
 .form-container .login-container >h2{
     text-align: center;
@@ -29,7 +32,7 @@ body{
 .form-container .login-container >p,
 .form-container .login-container >span{
     text-align: center;
-    color: #555;
+    color: white;
 }
 .form-container .login-container label{
     display: block;
@@ -61,7 +64,7 @@ body{
 
 }
 .form-container a{
-    color: #0099ff;
+    color: white;
     text-decoration: none;
 }
 .form-container a:hover{
@@ -108,30 +111,48 @@ body{
 }
 
 .form-container .welcome-screen-container{
-    background-color: #ccc;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100%;
     width: 50%;
 }
-@media screen and (max-width:1357px){
-    .form-container{
-        width: 95%;
-    }
-    .form-container .login-container{
-        width: 400px;
-        margin: 0 auto;
-    }
-    .form-container .welcome-screen-container{
-        width: 40%;
-    }
+.form-container .welcome-screen-container .imagen{
+    width: 400px;
+    height: 400px;
 }
-@media screen and (max-width:700px){
+
+
+@media screen and (max-width:1024px) and (max-height:768px){
     .form-container{
-        height: 80%;
+        width: 80%;
+        height: 100%;
     }
     .form-container .login-container{
         width: 400px;
+        margin: 20px;
     }
+  
+
+}
+
+@media screen and (max-width:900px) {
     .form-container .welcome-screen-container{
         display: none;
     }
+    .form-container .welcome-screen-container .imagen{
+        display: none;
+    }
+
+    .form-container{
+        height: 80%;
+        width:85%;
+    }
+    .form-container .login-container{
+        width:100%;
+        margin: 20px;
+    }
+    
+   
 }
